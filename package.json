@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TJDevClub/Express-Lesson/issues"
   },
-  "homepage": "https://github.com/TJDevClub/Express-Lesson"
+  "homepage": "https://github.com/TJDevClub/Express-Lesson",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
