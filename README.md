@@ -48,3 +48,15 @@ Now, change 3000 to `process.env.PORT`, go back to the terminal and type in `nod
 
 Visit `https://devclub-express-<username>.c9.io/` in your browser to see the results!
 
+##Customizing
+See where it says `res.send('Hello World!');`? You can change the string to whatever you want! Not impressed?
+
+Another thing you can do is make a new **route** with parameters you have access to. 
+
+Try adding this under your first route:
+
+    app.get('/greet/:name', function(req, res){
+      res.send("Hello there, " + req.params.name + ".");
+    });
+
+Now visit `https://devclub-express-<username>.c9.io/greet/Joe Shmoe` and see what happens. Using this information, what else can you make?
