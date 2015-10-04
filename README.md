@@ -29,21 +29,21 @@ Then, in the terminal again, type `touch index.js`. Open the file that was creat
 In the terminal, type in `npm install express --save`. 
 
 Then go back to `index.js` and copy and paste this code in:
-
-    var express = require('express');
-    var app = express();
-    
-    app.get('/', function (req, res) {
-      res.send('Hello World!');
-    });
-    
-    var server = app.listen(3000, function () {
-      var host = server.address().address;
-      var port = server.address().port;
-    
-      console.log('Example app listening at http://%s:%s', host, port);
-    });
-    
+```JavaScript
+ var express = require('express');
+ var app = express();
+ 
+ app.get('/', function (req, res) {
+   res.send('Hello World!');
+ });
+ 
+ var server = app.listen(3000, function () {
+   var host = server.address().address;
+   var port = server.address().port;
+ 
+   console.log('Example app listening at http://%s:%s', host, port);
+ });
+```
 Now, change 3000 to `process.env.PORT`, go back to the terminal and type in `node index.js`.
 
 Visit `https://devclub-express-<username>.c9.io/` in your browser to see the results!
@@ -54,9 +54,10 @@ See where it says `res.send('Hello World!');`? You can change the string to what
 Another thing you can do is make a new **route** with parameters you have access to. 
 
 Try adding this under your first route:
-
-    app.get('/greet/:name', function(req, res){
-      res.send("Hello there, " + req.params.name + ".");
-    });
+```JavaScript
+ app.get('/greet/:name', function(req, res){
+   res.send("Hello there, " + req.params.name + ".");
+ });
+```
 
 Now visit `https://devclub-express-<username>.c9.io/greet/Joe Shmoe` and see what happens. Using this information, what else can you make?
