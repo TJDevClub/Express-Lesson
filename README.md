@@ -8,7 +8,7 @@ To get started, make a github account if you don't already have one.
 
 Then go to http://c9.io and click sign in with github. 
 
-Next, make a workspace, call it whatever you want, don't worry about the description, don't clone it from a URL, and click Node.js as the template. 
+Next, make a workspace, call it `devclub-express`, don't worry about the description, don't clone it from a URL, and click Node.js as the template. 
 
 ##NodeJS Hello World
 Enter the workspace and in the terminal at the bottom type in `npm init`
