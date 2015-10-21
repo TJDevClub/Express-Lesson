@@ -90,4 +90,15 @@ Okay so git knows about all of our files and we have committed to the changes, b
     - Do NOT initialize with a README and don't worry about the gitignore/license
   - Follow the directions in the `…or push an existing repository from the command line` section
 
-##HTML
+##Static files
+
+```JavaScript
+ app.use(express.static('public'));
+```
+
+##Activity
+
+Why bother with a backend? Everything we've done we can do client side, right? Well not necessarily. We're going to demonstrate with an example. 
+
+Make a page that will show the nth fibonacci number!
+
