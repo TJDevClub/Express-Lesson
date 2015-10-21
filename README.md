@@ -74,9 +74,17 @@ First things first, we need to learn how to navigate the file tree. Basically it
 Next up, we're going to learn git and github. Git is a **version control system**. Basically, you can use github to store your programs. Think of it like a dropbox for code. 
 
   - `git status` - See what files have changed recently
-  - `git add ____` - add specified file or folder to your cloud
-  - `git add .` - add every file to your cloud
+  - `git add ____` - add changes in specified file or folder 
+  - `git add .` - add changes in every file 
 
 Now that we have added our changes, we need to **commit** to these changes. 
 
-  - `git commit -m "______"` - Fill in the blank with an explanation of what you changed. A sentence or less should do
+  - `git commit -m "______"` - Fill in the blank with an explanation of what you changed. A sentence or less should do.
+  - `git commit --amend -m "_____"` - Fix the last commit if you made a typo or something
+
+Okay so git knows about all of our files and we have committed to the changes, but how do we store these changes in the cloud?
+
+  - First thing we need to do is make a **repository** on github to store everything
+    - Name it whatever you want (like `node-lesson`)
+    - Do NOT initialize with a README and don't worry about the gitignore/license
+  - Follow the directions in the `…or push an existing repository from the command line` section
