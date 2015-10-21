@@ -60,3 +60,23 @@ Try adding this under your first route:
     });
 
 Now visit `https://devclub-express-<username>.c9.io/greet/Joe Shmoe` and see what happens. Using this information, what else can you make?
+
+##Command Line and Github
+
+So far, we've been using `node server.js` in the **command line** to run our program. That is an example of a command you're running in your **shell**. The shell is much more powerful. 
+
+First things first, we need to learn how to navigate the file tree. Basically it's the same thing as the sidebar to your left, you can open and close folders and files. There are a few commands you need to know including
+
+  - `ls` - show the current **directory**
+  - `cd ____` - change directory to the specified directory
+  - `cd ../` - change to the parent directory
+
+Next up, we're going to learn git and github. Git is a **version control system**. Basically, you can use github to store your programs. Think of it like a dropbox for code. 
+
+  - `git status` - See what files have changed recently
+  - `git add ____` - add specified file or folder to your cloud
+  - `git add .` - add every file to your cloud
+
+Now that we have added our changes, we need to **commit** to these changes. 
+
+  - `git commit -m "______"` - Fill in the blank with an explanation of what you changed. A sentence or less should do
