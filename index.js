@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
+app.use(express.static('static'));
+
+app.get('/sayhello', function (req, res) {
   res.send('Hello Express on C9!');
 });
 
